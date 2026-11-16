@@ -1,0 +1,7 @@
+<Slide notes={`我们要记住：作者知道的事情，不等于角色知道。Mnemosyne每次只编译一个学生，输入是本人可见资料和精确来源白名单，不把其他学生的档案、秘密或创作意见直接塞进去。本人观察和本人解释也要分开；理解某个行为，并不等于知道对方内心。source_refs能帮助追溯与校验权限，但引用存在不保证文字语义一定正确。程序校验和C_Mnemosyne审核都降低风险，却不能提供绝对真实性保证。导出分区也不是加密，下游仍须按角色隔离访问。`} style={{width:1280,height:720,padding:60,background:'#101318',fontFamily:'Microsoft YaHei',color:'#E8EAF0'}}>
+<Text style={{fontSize:36,fontWeight:'bold',lineHeight:1.2}}>有来源，不等于全知</Text><Box style={{height:1,background:'#303947',width:1160,marginTop:24}} />
+<Box style={{flexDirection:'row',gap:32,height:460,marginTop:32,alignItems:'center'}}>
+<Box style={{width:540,gap:32}}><Text style={{fontSize:56,fontWeight:'bold',lineHeight:1.2,color:'#86C8BD'}}>作者知道的，<br />角色未必知道。</Text><Text style={{fontSize:20,lineHeight:1.5,color:'#A1ACBC'}}>Mnemosyne 逐人编译接管包<br />本人观察 ≠ 本人解释 ≠ 他人内心</Text></Box>
+<Box style={{width:588,gap:24}}><Box style={{padding:24,border:'1px solid #303947',borderRadius:8,gap:32}}><Text style={{fontSize:20,lineHeight:1.5}}>本人获准资料＋精确 source_refs<br />↓<br />Mnemosyne ⇄ C_Mnemosyne<br />↓<br />本人记忆／私有信息／未知边界</Text></Box><Text style={{fontSize:20,lineHeight:1.5,color:'#A1ACBC'}}>不自动继承对方秘密或全知叙事。<br />有引用 ≠ 语义一定正确；分区 ≠ 加密。</Text></Box>
+</Box><Text style={{fontSize:14,lineHeight:1.4,color:'#A1ACBC',position:'absolute',left:60,top:670}}>CREATION　/　知识与权限　　　　　　　　　　　　　　　　　　　　　　　　　07 / 12</Text>
+</Slide>

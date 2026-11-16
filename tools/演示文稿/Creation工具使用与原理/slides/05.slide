@@ -1,0 +1,8 @@
+<Slide notes={`我们在项目根目录运行这条命令，然后用浏览器打开本机creation入口，不能把双击HTML当成真实模式的启动方法。API配置由两引擎共享，保存会把密钥明文写入tools/common/config.json，因此不能分享这个配置文件。我们这次只核对了读写逻辑，没有读取配置值，也没有启动服务或调用模型。前四阶段默认后端等待300秒，网页总等待330秒；后续作者调用使用后端固定300秒，不能说它也受前面的超时输入框控制。延长等待不能保证解决上游504。`} style={{width:1280,height:720,padding:60,background:'#101318',fontFamily:'Microsoft YaHei',color:'#E8EAF0'}}>
+<Text style={{fontSize:36,fontWeight:'bold',lineHeight:1.2}}>从本地服务进入，不从 HTML 双击开始</Text><Box style={{height:1,background:'#303947',width:1160,marginTop:24}} />
+<Box style={{marginTop:32,gap:32}}>
+<Box style={{padding:24,background:'#191E26',borderRadius:8,gap:32}}><Text style={{fontSize:24,fontWeight:'bold',lineHeight:1.3,color:'#86C8BD'}}>项目根目录 → 启动服务 → 打开入口</Text><Text style={{fontSize:20,lineHeight:1.5}}>python tools/creation/student_server.py<br />http://127.0.0.1:8765/creation/</Text></Box>
+<Box style={{flexDirection:'row',gap:32}}><Box style={{width:684,gap:32}}><Text style={{fontSize:24,fontWeight:'bold',lineHeight:1.3}}>共享配置，不分享密钥</Text><Text style={{fontSize:20,lineHeight:1.5}}>页面填写 Base URL、API_KEY、模型名称<br />保存到 tools/common/config.json（密钥明文）<br />两引擎共用；演示先选“不调用 API”的示例模式</Text></Box><Box style={{width:444,gap:32}}><Text style={{fontSize:24,fontWeight:'bold',lineHeight:1.3}}>等待时间有两套边界</Text><Text style={{fontSize:20,lineHeight:1.5}}>前四阶段默认：300秒＋网页30秒<br />可设后端等待范围：30–1800秒<br />后续作者：后端固定300秒</Text></Box></Box>
+<Text style={{fontSize:20,lineHeight:1.5,color:'#A1ACBC'}}>延长本地等待不保证解决上游 504；超时断开不保证上游停止。</Text>
+</Box><Text style={{fontSize:14,lineHeight:1.4,color:'#A1ACBC',position:'absolute',left:60,top:670}}>CREATION　/　启动与配置　·　本次未读取配置值　　　　　　　　　　　　　　　　　05 / 12</Text>
+</Slide>

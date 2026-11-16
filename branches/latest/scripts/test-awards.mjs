@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
+import { reactive,ref,computed,watch } from 'vue';
+import { awardList,getAward } from '../src/awards.js';
+import { coupleCandidates } from '../src/coupleCandidates.js';
+const source=readFileSync(new URL('../src/useAward.js',import.meta.url),'utf8').replace(/^import .*;$/gm,'').replace('export function useAward','function useAward');
+const storage=new Map();
+function fixture(){const context={reactive,ref,computed,watch,onMounted:()=>{},onUnmounted:()=>{},coupleCandidates,getAward,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)}};vm.createContext(context);vm.runInContext(source+'\nglobalThis.game=useAward();',context);return context.game;}
+assert.equal(awardList.length,1);assert.equal(getAward().name,'优秀情侣奖');
+const raw=JSON.parse(readFileSync(new URL('../../../tools/successful-run.json',import.meta.url),'utf8'));
+const a=raw.author,c=coupleCandidates[0];
+assert.equal(a.manual_revision.model_reviewed,false);assert.ok(a.manual_revision.original_author.reviews.length);
+assert.equal(c.pages[0].fields['绩点排名'],'本科：专业前5%');assert.equal(c.pages[1].fields['绩点排名'],'本科：年级排名中游');
+const speech=a.results.script.scenes.flatMap(s=>s.beats).filter(b=>['dialogue','chorus'].includes(b.kind));
+assert.equal(c.speech.length,speech.length);assert.ok(c.speech.every(b=>!/(?:s3|s4|授权|隐私|流程|我的展示句|收束句)/.test(b.text)));
+assert.ok(c.pages.every(p=>p.statement.startsWith('各位评委好')));
+assert.ok(!/(role_private|private_information|source_refs|backstage|candidate_token)/.test(JSON.stringify(c)));
+let g=fixture();g.startGame();g.receive();for(let i=0;i<getAward().meetings.length;i++)g.advance();assert.equal(g.state.scene,'notice');g.publishNotice();g.collectForms();g.toggleCouple(c.id);g.toggleCouple(c.id);assert.equal(g.state.selected.length,0);g.toggleCouple(c.id);g.startDefense();g.advanceCouple();g=fixture();assert.equal(g.state.defenseStep,1);for(let i=1;i<c.speech.length;i++)g.advanceCouple();assert.equal(g.state.scene,'coupleEnd');assert.equal(fixture().state.scene,'coupleEnd');g.reset();assert.equal(g.state.scene,'chat');
+console.log('PASS 单奖项流程、报名排名、公开白名单、动态答辩条数、进度恢复、人工修订审计');

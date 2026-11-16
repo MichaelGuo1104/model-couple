@@ -1,0 +1,24 @@
+node_modules/
+dist/
+*.log
+
+# Local test artifacts
+isolation-entry.txt
+browser-test-profile/
+preview-*.png
+*.zip
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Private runtime state / credentials
+runtime/
+__pycache__/
+.env
+config.local.json
+config.json
+browser-campus-profile/
+

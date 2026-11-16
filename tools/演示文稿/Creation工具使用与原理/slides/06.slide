@@ -1,0 +1,9 @@
+<Slide notes={`我们先造人，不先给关系找模板。Prometheus写每个人的目标、害怕、矛盾和独立生活。人物锁定后，Cupid建立从认识到当前的完整关系年表，区分认识多久和交往多久。框架审定后，Aphrodite补具体事件和重复习惯，包括日期、行动、后果以及每个人实际观察到什么。细节不能偷偷重写人物或回退框架。这里的历史都截至2025年4月23日，双方对同一经历可以有不同理解，也不必一次谈心就解决所有分歧。`} style={{width:1280,height:720,padding:60,background:'#101318',fontFamily:'Microsoft YaHei',color:'#E8EAF0'}}>
+<Text style={{fontSize:36,fontWeight:'bold',lineHeight:1.2}}>前三步：造人、牵线、写生活</Text><Box style={{height:1,background:'#303947',width:1160,marginTop:24}} />
+<Box style={{marginTop:32,gap:24}}>
+<Box style={{width:820,padding:24,border:'1px solid #303947',borderRadius:8,flexDirection:'row',gap:32}}><Text style={{fontSize:24,fontWeight:'bold',lineHeight:1.3,color:'#86C8BD',width:220}}>01　Prometheus</Text><Text style={{fontSize:20,lineHeight:1.5,width:520}}>造人：目标、害怕、矛盾、独立生活<br />人物通过审查后锁定</Text></Box>
+<Box style={{width:980,marginLeft:80,padding:24,border:'1px solid #303947',borderRadius:8,flexDirection:'row',gap:32}}><Text style={{fontSize:24,fontWeight:'bold',lineHeight:1.3,color:'#86C8BD',width:220}}>02　Cupid</Text><Text style={{fontSize:20,lineHeight:1.5,width:680}}>牵线：吸引、张力、完整关系年表<br />认识时长 ≠ 交往时长；基于已锁定人物</Text></Box>
+<Box style={{width:1000,marginLeft:160,padding:24,background:'#191E26',borderRadius:8,flexDirection:'row',gap:32}}><Text style={{fontSize:24,fontWeight:'bold',lineHeight:1.3,color:'#86C8BD',width:220}}>03　Aphrodite</Text><Text style={{fontSize:20,lineHeight:1.5,width:700}}>写生活：事件、习惯、逐人观察与解释<br />只细化审定框架，不回退重写</Text></Box>
+<Text style={{fontSize:20,lineHeight:1.5,color:'#A1ACBC'}}>历史截止 2025-04-23；保留分歧，不预埋未来颁奖结果。</Text>
+</Box><Text style={{fontSize:14,lineHeight:1.4,color:'#A1ACBC',position:'absolute',left:60,top:670}}>CREATION　/　人物与生活　　　　　　　　　　　　　　　　　　　　　　　　　06 / 12</Text>
+</Slide>

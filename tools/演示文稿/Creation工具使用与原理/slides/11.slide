@@ -1,0 +1,9 @@
+<Slide notes={`我们保存续写进度用工程，它保留候选、阶段、审查和记录；不是发给玩家的公开包。运行设定只交付审定背景，不能替代工程无损续写；人工接受或缺少严格审查也不能直接进入这条交接。game包是Chronos审定后已经提交的报名快照，公开申请与角色私有区在同一个包里，不能整包当成公开材料。准备包要到后续全部审查锁定，里面是共同剧本和逐人的经历、报名与准备心态，不含审核记录和教师后台意图。消费端必须自己落实隔离访问，JSON分区不提供加密。`} style={{width:1280,height:720,padding:60,background:'#101318',fontFamily:'Microsoft YaHei',color:'#E8EAF0'}}>
+<Text style={{fontSize:36,fontWeight:'bold',lineHeight:1.2}}>四种导出，解决四件不同的事</Text><Box style={{height:1,background:'#303947',width:1160,marginTop:24}} />
+<Box style={{marginTop:32,padding:24,border:'1px solid #303947',borderRadius:8,gap:24}}>
+<Box style={{flexDirection:'row',gap:32}}><Text style={{width:280,fontSize:24,fontWeight:'bold',lineHeight:1.3,color:'#86C8BD'}}>工程 / project</Text><Text style={{width:796,fontSize:20,lineHeight:1.5}}>留进度：统一保存两引擎状态、候选、审查与版本<br />用于导入后暂停续写；不是玩家公开材料</Text></Box><Box style={{height:1,background:'#303947',width:1110}} />
+<Box style={{flexDirection:'row',gap:32}}><Text style={{width:280,fontSize:24,fontWeight:'bold',lineHeight:1.3}}>运行设定</Text><Text style={{width:796,fontSize:20,lineHeight:1.5}}>交背景：人物、关系、逐人接管包与审查元信息<br />严格审查通过、无人工接受；不能代替工程恢复进度</Text></Box><Box style={{height:1,background:'#303947',width:1110}} />
+<Box style={{flexDirection:'row',gap:32}}><Text style={{width:280,fontSize:24,fontWeight:'bold',lineHeight:1.3}}>game 包</Text><Text style={{width:796,fontSize:20,lineHeight:1.5}}>交报名：Chronos 审定的已提交快照<br />包含 player_visible 与 role_private，不能整包公开</Text></Box><Box style={{height:1,background:'#303947',width:1110}} />
+<Box style={{flexDirection:'row',gap:32}}><Text style={{width:280,fontSize:24,fontWeight:'bold',lineHeight:1.3}}>准备包</Text><Text style={{width:796,fontSize:20,lineHeight:1.5}}>交准备：全部准备审定后，共同剧本＋逐人经历与态度<br />不含审查记录／后台意图；消费端仍须隔离访问</Text></Box>
+</Box><Text style={{fontSize:14,lineHeight:1.4,color:'#A1ACBC',position:'absolute',left:60,top:670}}>CREATION　/　导出不是同一件事　·　调试JSON不等于可续写工程　　　　　　　　　　　　11 / 12</Text>
+</Slide>

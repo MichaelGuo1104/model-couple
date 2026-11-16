@@ -1,0 +1,2 @@
+export const people={guo:{name:'郭校长',whole:'whole_guoxiaozhang',thumb:'thumbnail_guoxiaozhang'},zhao:{name:'赵副主任',whole:'whole_zhaofuzhuren',thumb:'thumbnail_zhaofuzhuren'},qian:{name:'钱教授',whole:'whole_quanjiaoshou',thumb:'thumbnail_qianjiaoshou'},sun:{name:'孙处长',whole:'whole_sunchuzhang',thumb:'thumbnail_sunchuzhang'},li:{name:'李部长',whole:'whole_libuzhang',thumb:'thumbnail_libuzhang'},zhou:{name:'周处长',whole:'whole_zhouchuzhang',thumb:'thumbnail_zhouchuzhang'}};
+export const image = file => `./assets/${file === "meeting_room" ? "places" : "people"}/${file}.png`;

@@ -1,0 +1,37 @@
+# 真实凭据 / 本地密钥 —— 绝不上传
+config.json
+.env
+.env.*
+*.pem
+*.key
+config.local.json
+
+# 浏览器隐私配置(可能含 cookie / 登录态)
+browser-campus-profile/
+browser-test-profile/
+
+# 本地运行时状态(sqlite / 日志 / 截图 / 测试缓存)
+runtime/
+*.log
+isolation-entry.txt
+preview-*.png
+
+# 依赖与构建产物
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# 本地数据 / 日志目录
+data/
+logs/
+
+# 归档
+*.zip
+*.7z
+
+# OS / 编辑器噪声
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

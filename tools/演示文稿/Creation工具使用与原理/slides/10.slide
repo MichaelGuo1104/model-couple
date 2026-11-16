@@ -1,0 +1,7 @@
+<Slide notes={`我会先用两人一对的固定示例熟悉按钮，展示一步、完成阶段、审查锁定，以及入围门槛的暂停。示例不是AI真实生成，固定通过响应也不能证明模型质量。我们确认预算后才新建真实API运行，先执行一步、读实际输出，再决定是否继续。失败自动重试默认关闭，开启后每个额外请求都可能收费；超时并不保证上游已停，无限审查修订也可能持续消费。我们导出统一可续写工程，等待请求结束后再导入恢复，导入保持暂停且不自动调用模型；作者工程也可凭工程ID恢复。`} style={{width:1280,height:720,padding:60,background:'#101318',fontFamily:'Microsoft YaHei',color:'#E8EAF0'}}>
+<Text style={{fontSize:36,fontWeight:'bold',lineHeight:1.2}}>演示先跑通，再花钱</Text><Box style={{height:1,background:'#303947',width:1160,marginTop:24}} />
+<Box style={{flexDirection:'row',gap:32,marginTop:32,height:460,alignItems:'center'}}>
+<Box style={{width:440,gap:32}}><Text style={{fontSize:56,fontWeight:'bold',lineHeight:1.2,color:'#86C8BD'}}>先示例。<br />再真实 API。</Text><Text style={{fontSize:20,lineHeight:1.5,color:'#A1ACBC'}}>固定示例 ≠ 真实 AI<br />固定通过 ≠ 模型质量证明</Text></Box>
+<Box style={{width:688,gap:32}}><Text style={{fontSize:20,lineHeight:1.5}}>01　2人1对示例：一步 → 阶段 → 查看审查与锁定<br /><br />02　颁奖分支：观察入围等待，再显式录入外部决定<br /><br />03　真实 API：确认预算，新建后先走一步<br /><br />04　导出统一工程 → 等请求结束 → 导入暂停恢复</Text><Box style={{padding:24,background:'#191E26',borderRadius:8}}><Text style={{fontSize:20,lineHeight:1.5,color:'#86C8BD'}}>失败自动重试默认关闭；开启后可能额外／重复计费。<br />无限修订也可能持续收费；恢复不会自动请求模型。</Text></Box></Box>
+</Box><Text style={{fontSize:14,lineHeight:1.4,color:'#A1ACBC',position:'absolute',left:60,top:670}}>CREATION　/　现场操作顺序　·　本次制作未调用模型API　　　　　　　　　　　　　　　10 / 12</Text>
+</Slide>
